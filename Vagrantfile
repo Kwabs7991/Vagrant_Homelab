@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
 	  lcv1.vm.box_check_update = true
 	  lcv1.vm.hostname = "LON-V001"
 	  
-	  lcv1.vm.network "forwarded_port", guest:80, host:8080
-	  lcv1.vm.network "private_network", ip: "192.168.1.10", virtualbox__intnet: "labnetwork1"
+	  lcv1.vm.network "forwarded_port", guest:XX, host:XXXX
+	  lcv1.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 	  
 	  lcv1.vm.provider "virtualbox" do |vb|
 	      vb.memory = "2048"
@@ -30,8 +30,8 @@ Vagrant.configure("2") do |config|
 	  web.vm.hostname = "WebDB01"
           
 
-          web.vm.network "forwarded_port", guest:82, host:8282
-          web.vm.network "private_network", ip: "192.168.1.11", virtualbox__intnet: "labnetwork1"
+          web.vm.network "forwarded_port", guest:XX, host:XXXX
+          web.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
 
           web.vm.provider "virtualbox" do |vb|
@@ -55,8 +55,8 @@ Vagrant.configure("2") do |config|
           wb.vm.box_check_update = true
 	  wb.vm.hostname = "WebServ01"
           
-          wb.vm.network "forwarded_port", guest:83, host:8383
-          wb.vm.network "private_network", ip: "192.168.1.12", virtualbox__intnet: "labnetwork1"
+          wb.vm.network "forwarded_port", guest:XX, host:XXXX
+          wb.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
 
           wb.vm.provider "virtualbox" do |vb|
@@ -79,8 +79,8 @@ Vagrant.configure("2") do |config|
           lcv2.vm.box_check_update = true
 	  lcv2.vm.hostname = "LON-V002"
 
-          lcv2.vm.network "forwarded_port", guest:84, host:8484
-          lcv2.vm.network "private_network", ip: "192.168.1.13", virtualbox__intnet: "labnetwork1"
+          lcv2.vm.network "forwarded_port", guest:XX, host:XXXX
+          lcv2.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
 
           lcv2.vm.provider "virtualbox" do |vb|
@@ -107,8 +107,8 @@ Vagrant.configure("2") do |config|
 	  dns1.vm.box_check_update = true
           dns1.vm.hostname = "DNS01"
 
-          dns1.vm.network "forwarded_port", guest:85, host:8585
-          dns1.vm.network "private_network", ip: "192.168.1.14", virtualbox__intnet: "labnetwork1"
+          dns1.vm.network "forwarded_port", guest:XX, host:XXXX
+          dns1.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
           dns1.vm.provider "virtualbox" do |vb|
               vb.memory = "2048"
@@ -125,8 +125,8 @@ Vagrant.configure("2") do |config|
           smtp1.vm.hostname = "SMTP01"
 	  smtp1.winrm.timeout =   1800 # 30 minutes
 	  smtp1.vm.boot_timeout = 1800 # 30 minutes
-          smtp1.vm.network "forwarded_port", guest:86, host:8686
-          smtp1.vm.network "private_network", ip: "192.168.1.15", virtualbox__intnet: "labnetwork1"
+          smtp1.vm.network "forwarded_port", guest:XX, host:XXXX
+          smtp1.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
           smtp1.vm.provider "virtualbox" do |vb|
               vb.memory = "2048"
@@ -143,8 +143,8 @@ Vagrant.configure("2") do |config|
 	  sql1.vm.box_check_update = true
           sql1.vm.hostname = "SQL01"
 
-          sql1.vm.network "forwarded_port", guest:87, host:8787
-          sql1.vm.network "private_network", ip: "192.168.1.16", virtualbox__intnet: "labnetwork1"
+          sql1.vm.network "forwarded_port", guest:XX, host:XXXX
+          sql1.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
           sql1.vm.provider "virtualbox" do |vb|
               vb.memory = "2048"
@@ -161,8 +161,8 @@ Vagrant.configure("2") do |config|
 	  lvc3.vm.box_check_update = true
           lvc3.vm.hostname = "LON-V003"
           
-          lvc3.vm.network "forwarded_port", guest:88, host:8888
-          lvc3.vm.network "private_network", ip: "192.168.1.17", virtualbox__intnet: "labnetwork1"
+          lvc3.vm.network "forwarded_port", guest:XX, host:XXXX
+          lvc3.vm.network "private_network", ip: "192.xxx.x.xx", virtualbox__intnet: "labnetwork1"
 
           lvc3.vm.provider "virtualbox" do |vb|
               vb.memory = "2048"
